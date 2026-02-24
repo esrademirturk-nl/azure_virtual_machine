@@ -1,11 +1,5 @@
 # Azure Virtual Machine & Azure File Share Assignment
 
-## 👩‍🎓 Student Information
-**Name:** Esra Demirturk  
-**Course:** Azure Fundamentals  
-**Instructor:** (Trainer Name)  
-**Date:** (Submission Date)
-
 ---
 
 ## 📌 Project Overview
@@ -31,10 +25,106 @@ The objective of this assignment was to understand:
 
 ---
 
-## 🌐 2️⃣ Apache Web Server Installation
+## 2. Apache Web Server Installation
 
-Installed Apache inside the Linux VM:
+Installed Apache:
 
-```bash
-sudo apt update
-sudo apt install apache2 -y
+sudo apt update  
+sudo apt install apache2 -y  
+
+Opened port 80 in Network Security Group.
+
+Verified by accessing:
+
+http://PUBLIC-IP
+
+Result: Apache default page displayed successfully.
+
+---
+
+## 3. MySQL Installation
+
+Installed MySQL:
+
+sudo apt install mysql-server -y  
+
+Created database:
+
+CREATE DATABASE assignmentdb;  
+SHOW DATABASES;
+
+Result: Database created successfully.
+
+---
+
+## 4. Azure File Share
+
+- Created Storage Account
+- Created File Share named "myshare"
+- Mounted using CIFS to /mnt/myshare
+
+Tested file operations:
+
+sudo touch test.txt  
+sudo rm test.txt  
+
+Result: File successfully created and deleted.  
+Verified in Azure Portal.
+
+---
+
+## 5. Network Configuration
+
+Added inbound rule:
+
+Port: 80  
+Protocol: TCP  
+Action: Allow  
+
+This allowed public access to Apache.
+
+---
+
+## Screenshots
+
+### Apache Running
+![Apache](screenshots/apache.png)
+
+### MySQL Database
+![MySQL](screenshots/mysql.png)
+
+### Azure File Share
+![FileShare](screenshots/fileshare-terminal.png)
+![FileShare](screenshots/fileshare-portal.png)
+
+### Network Rule
+![NSG](screenshots/nsg-rule.png)
+
+- Apache running in browser
+- MySQL database creation
+- File Share mounted in terminal
+- File visible in Azure Portal
+- NSG inbound rule configuration
+
+---
+
+## Clean Up
+
+Deleted:
+
+- Virtual Machine
+- Storage Account
+- Resource Group
+- Public IP
+- Network Interface
+
+---
+
+## Technologies Used
+
+- Microsoft Azure
+- Ubuntu Linux
+- Apache
+- MySQL
+- Azure File Share (SMB / CIFS)
+- Network Security Group (NSG)
