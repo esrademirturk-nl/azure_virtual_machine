@@ -94,11 +94,11 @@ This allowed public access to Apache.
 ![MySQL](screenshots/mysql.png)
 
 ### Azure File Share
-![FileShare](screenshots/fileshare-terminal.png)
-![FileShare](screenshots/fileshare-portal.png)
+![FileShare](screenshots/fileshare_terminal.png)
+![FileShare](screenshots/fileshare_portal.png)
 
 ### Network Rule
-![NSG](screenshots/nsg-rule.png)
+![NSG](screenshots/nsg_rule.png)
 
 - Apache running in browser
 - MySQL database creation
