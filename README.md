@@ -41,17 +41,18 @@ http://PUBLIC-IP
 Result: Apache default page displayed successfully.
 
 ---
-
-## 3. MySQL Installation
+## 🐬 3️⃣ MySQL Installation
 
 Installed MySQL:
-
-sudo apt install mysql-server -y  
+```
+sudo apt install mysql-server -y
+```
 
 Created database:
-
-CREATE DATABASE assignmentdb;  
+```
+CREATE DATABASE assignmentdb;
 SHOW DATABASES;
+```
 
 Result: Database created successfully.
 
