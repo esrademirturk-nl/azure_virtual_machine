@@ -1,7 +1,5 @@
 # Azure Virtual Machine & Azure File Share Assignment
 
----
-
 ## 📌 Project Overview
 
 This project demonstrates the creation and management of a Linux Virtual Machine in Microsoft Azure and the integration of Azure File Share.
@@ -63,12 +61,18 @@ Result: Database created successfully.
 
 Created Storage Account
 
-Created File Share named "myshare"
+Created File Share named myshare
 
-Mounted using CIFS to /mnt/myshare
+Retrieved Access Key from Azure Portal
 
+Mounted Azure File Share to Linux VM:
+```
+sudo mount -t cifs //<storage-account>.file.core.windows.net/myshare /mnt/myshare \
+-o vers=3.0,username=<storage-account>,password=<access-key>,dir_mode=0777,file_mode=0777,serverino
+```
 Tested file operations:
 ```
+cd /mnt/myshare
 sudo touch test.txt
 sudo rm test.txt
 ```
