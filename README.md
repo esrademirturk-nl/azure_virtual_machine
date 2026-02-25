@@ -59,11 +59,11 @@ Result: Database created successfully.
 ---
 ## 💾 4️⃣ Azure File Share
 
-Created Storage Account
+- Created Storage Account
 
-Created File Share named myshare
+- Created File Share named myshare
 
-Retrieved Access Key from Azure Portal
+- Retrieved Access Key from Azure Portal
 
 Mounted Azure File Share to Linux VM:
 ```
@@ -138,14 +138,14 @@ Deleted:
 
 ## 🚀 Technologies Used
 
-Microsoft Azure
+- Microsoft Azure
 
-Ubuntu Linux
+- Ubuntu Linux
 
-Apache
+- Apache
 
-MySQL
+- MySQL
 
-Azure File Share (SMB / CIFS)
+- Azure File Share (SMB / CIFS)
 
-Network Security Group (NSG)
+- Network Security Group (NSG)
