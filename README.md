@@ -115,13 +115,13 @@ This allowed public access to Apache.
 ## ⚠️ Problems Encountered & Solutions
 
 Issue: Apache not accessible from browser
-Solution: Added inbound rule for port 80 in NSG
+- Solution: Added inbound rule for port 80 in NSG
 
 Issue: MySQL installation returned 404 error
-Solution: Updated package list using sudo apt update
+- Solution: Updated package list using sudo apt update
 
 Issue: Azure File Share not visible in portal
-Solution: Re-mounted share using correct access key
+- Solution: Re-mounted share using correct access key
 
 ---
 ## 🧹 Clean Up
@@ -139,13 +139,8 @@ Deleted:
 ## 🚀 Technologies Used
 
 - Microsoft Azure
-
 - Ubuntu Linux
-
 - Apache
-
 - MySQL
-
 - Azure File Share (SMB / CIFS)
-
 - Network Security Group (NSG)
