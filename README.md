@@ -24,18 +24,18 @@ The objective of this assignment was to understand:
 - Connected using Azure Bastion
 
 ---
+## 🌐 2️⃣ Apache Web Server Installation
 
-## 2. Apache Web Server Installation
+Installed Apache inside the VM:
 
-Installed Apache:
-
-sudo apt update  
-sudo apt install apache2 -y  
+```bash
+sudo apt update
+sudo apt install apache2 -y
+```
 
 Opened port 80 in Network Security Group.
 
 Verified by accessing:
-
 http://PUBLIC-IP
 
 Result: Apache default page displayed successfully.
