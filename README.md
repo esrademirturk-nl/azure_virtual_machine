@@ -57,30 +57,32 @@ SHOW DATABASES;
 Result: Database created successfully.
 
 ---
+## 💾 4️⃣ Azure File Share
 
-## 4. Azure File Share
+Created Storage Account
 
-- Created Storage Account
-- Created File Share named "myshare"
-- Mounted using CIFS to /mnt/myshare
+Created File Share named "myshare"
+
+Mounted using CIFS to /mnt/myshare
 
 Tested file operations:
-
-sudo touch test.txt  
-sudo rm test.txt  
-
-Result: File successfully created and deleted.  
+```
+sudo touch test.txt
+sudo rm test.txt
+```
+Result: File successfully created and deleted.
 Verified in Azure Portal.
 
 ---
-
-## 5. Network Configuration
+## 🔐 5️⃣ Network Configuration
 
 Added inbound rule:
 
-Port: 80  
-Protocol: TCP  
-Action: Allow  
+Port: 80
+
+Protocol: TCP
+
+Action: Allow
 
 This allowed public access to Apache.
 
