@@ -1,4 +1,5 @@
 # Azure Virtual Machine & Azure File Share Assignment
+![azure structure](screenshots/azure_structure.png)
 
 ## 📌 Project Overview
 
