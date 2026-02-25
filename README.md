@@ -36,7 +36,9 @@ sudo apt install apache2 -y
 Opened port 80 in Network Security Group.
 
 Verified by accessing:
+```
 http://PUBLIC-IP
+```
 
 Result: Apache default page displayed successfully.
 
@@ -78,17 +80,17 @@ Verified in Azure Portal.
 
 Added inbound rule:
 
-Port: 80
+- Port: 80
 
-Protocol: TCP
+- Protocol: TCP
 
-Action: Allow
+- Action: Allow
 
 This allowed public access to Apache.
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
 ### Apache Running
 ![Apache](screenshots/apache.png)
@@ -105,15 +107,20 @@ This allowed public access to Apache.
 ### Network Rule
 ![NSG](screenshots/nsg-rule.png)
 
-- Apache running in browser
-- MySQL database creation
-- File Share mounted in terminal
-- File visible in Azure Portal
-- NSG inbound rule configuration
+---
+## ⚠️ Problems Encountered & Solutions
+
+Issue: Apache not accessible from browser
+Solution: Added inbound rule for port 80 in NSG
+
+Issue: MySQL installation returned 404 error
+Solution: Updated package list using sudo apt update
+
+Issue: Azure File Share not visible in portal
+Solution: Re-mounted share using correct access key
 
 ---
-
-## Clean Up
+## 🧹 Clean Up
 
 Deleted:
 
@@ -125,11 +132,16 @@ Deleted:
 
 ---
 
-## Technologies Used
+## 🚀 Technologies Used
 
-- Microsoft Azure
-- Ubuntu Linux
-- Apache
-- MySQL
-- Azure File Share (SMB / CIFS)
-- Network Security Group (NSG)
+Microsoft Azure
+
+Ubuntu Linux
+
+Apache
+
+MySQL
+
+Azure File Share (SMB / CIFS)
+
+Network Security Group (NSG)
